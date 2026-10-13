@@ -1,0 +1,687 @@
+/* --- RESET DE BASE & CURSEUR PERSONNALISÉ --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+  /* Curseur personnalisé (remplace l'URL par le chemin de ton icône PNG 32x32) */
+  cursor: url('images/custom-cursor.png'), auto;
+}
+
+a, button, summary {
+  cursor: url('images/custom-cursor-hover.png'), pointer;
+}
+
+/* Force les titres en minuscules selon ta DA */
+h1, h2, h3, h4, .section-title, .hero-title, .logo, .nav-links a {
+  text-transform: none;
+}
+
+/* Accentuation éditoriale (Cursive / Serif) */
+.italic-accent {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* --- NAVBAR --- */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(252, 232, 235, 0.85);
+  z-index: 999;
+}
+
+header .logo {
+  color: #111111;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+header nav ul li a:hover {
+  opacity: 0.6;
+}
+
+/* --- STRUCTURE CONTENEUR ET SECTIONS --- */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 100px 20px;
+}
+
+/* --- SECTION HERO (PLEIN ÉCRAN ET DOSSIER PARFAITEMENT CENTRÉ) --- */
+.hero {
+  background-color: #fce8eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #111111;
+  margin-bottom: 24px;
+}
+
+.hero-image-wrapper {
+  max-width: 380px; /* Taille optimale du dossier centré */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-folder-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- SECTION ABOUT ME (LAYOUT 2 COLONNES : IMAGE À GAUCHE, TEXTE À DROITE) --- */
+.hero-about {
+  background-color: #fce8eb;
+  padding: 80px 20px;
+}
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-image-side {
+  flex: 0 0 280px; /* Taille réduite pour ne pas écraser le texte */
+}
+
+.about-badge-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+
+.about-text-side {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+}
+
+/* --- SECTION PROJETS (BLANC) --- */
+.projects {
+  background-color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 24px;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: #bd5f7b;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* --- SECTION COMPÉTENCES (NOIR AVEC TAGS) --- */
+.bts-sio {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.dark-title {
+  color: #ffffff;
+}
+
+.section-subtitle {
+  color: #a0a0a0;
+  margin-bottom: 40px;
+}
+
+.bloc-wrapper {
+  margin-bottom: 40px;
+}
+
+.bloc-heading {
+  font-size: 18px;
+  color: #f7d6e0;
+  margin-bottom: 15px;
+}
+
+.accordion-container {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion-item summary {
+  padding: 20px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item summary .icon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item[open] summary .icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  padding-bottom: 20px;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Badges / Tags d'outils */
+.skill-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.skill-tags .tag {
+  background: rgba(247, 214, 224, 0.15);
+  color: #f7d6e0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid rgba(247, 214, 224, 0.3);
+}
+
+/* --- SECTION VEILLE (LAYOUT 2 COLONNES : TEXTE À GAUCHE, IMAGE À DROITE) --- */
+.veille-section {
+  background-color: #fcfcfc;
+  padding: 80px 20px;
+}
+
+.veille-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.veille-text-side {
+  flex: 1;
+}
+
+.veille-badge {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #bd5f7b;
+}
+
+.veille-main-title {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 10px 0 24px 0;
+}
+
+.veille-intro {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.veille-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.veille-list li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.veille-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #bd5f7b;
+}
+
+.veille-tools-box {
+  background: #fce8eb;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.veille-graphic-side {
+  flex: 0 0 320px; /* Taille contenue pour l'image de veille */
+}
+
+.veille-fiches-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 60px 20px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-brand h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-brand h3 span {
+  color: #f7d6e0;
+}
+
+.footer-brand p {
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  color: #fff;
+  background: #222;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background: #bd5f7b;
+}
+
+.footer-nav h4, .footer-contact h4 {
+  color: #f7d6e0;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+}
+
+.footer-nav ul li a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact p {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #777;
+}
+
+.legal-link {
+  color: #777;
+  text-decoration: none;
+}
+
+.legal-link:hover {
+  color: #f7d6e0;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  .projects-grid, .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .about-layout, .veille-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image-side, .veille-graphic-side {
+    flex: none;
+  }
+  .hero-title {
+    font-size: 42px;
+  }
+  header {
+    padding: 20px;
+  }
+}
+
+/* --- COMPLÉMENT POUR FICHES DÉTAILLÉES DANS L'ACCORDÉON --- */
+.detail-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 15px;
+}
+
+.detail-card h4 {
+  color: #f7d6e0;
+  font-size: 15px;
+  margin: 16px 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-card h4:first-child {
+  margin-top: 0;
+}
+
+.detail-card ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.detail-card li {
+  margin-bottom: 6px;
+}
+
+.detail-card p {
+  margin-bottom: 12px;
+}
+
+/* Déclaration sécurisée de la police DaFont */
+@font-face {
+  font-family: 'BillaMount-Regular';
+  src: url('font/BillaMount-Regular\ Script.ttf') format('truetype'),
+       url('font/BillaMount-Regular\ Script.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Application prioritaire sur l'accentuation */
+.italic-accent {
+  font-family: 'BillaMount-Regular', 'Cormorant Garamond', cursive, serif !important;
+  font-style: normal;
+  font-size: 1.1em; /* Ajuste légèrement la taille si la police est petite */
+}
+
+/* Conteneur d'image avec masque rose au survol */
+.project-card {
+  position: relative;
+}
+
+.project-card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Couche de transparence rose masquée par défaut */
+.project-card-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 232, 235, 0.45); /* Mème rose #fce8eb avec opacité */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Activation au survol de la carte */
+.project-card:hover .project-card-image-wrapper::after {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   STYLES SPÉCIFIQUES AUX PAGES PROJETS (SANS CONFLIT)
+   ========================================================================== */
+
+/* Conteneur principal de la page projet */
+.project-detail-page {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+/* Bouton de retour au menu propre et épuré */
+.btn-back-portfolio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none !important;
+  color: #111111 !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 8px 18px;
+  background-color: #fce8eb;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  margin-bottom: 32px;
+}
+
+.btn-back-portfolio:hover {
+  background-color: #bd5f7b;
+  color: #ffffff !important;
+  transform: translateX(-4px);
+}
+
+/* Titre principal du projet */
+.project-detail-page h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+/* Numérotation des sections (1. contexte & enjeux, etc.) */
+.project-detail-page h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #bd5f7b;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #fce8eb;
+  padding-bottom: 6px;
+}
+
+/* Paragraphes et listes de contenu */
+.project-detail-page p, 
+.project-detail-page li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4a4a4a;
+}
+
+.project-detail-page ul {
+  list-style: none;
+  margin: 16px 0;
+  padding-left: 0;
+}
+
+.project-detail-page ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.project-detail-page ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #bd5f7b;
+  font-weight: bold;
+}
+
+/* Curseur par défaut */
+body {
+  cursor: url('images/mon-curseur.png'), auto;
+}
+
+/* Curseur au survol des liens et boutons */
+a, button, summary {
+  cursor: url('images/mon-curseur-hover.png'), pointer;
+}
+
+/* Finger Point Sprout - https://www.cursors-4u.com/cursor/tcw-cursor */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/tcw-cursor-13c85997-preview-32.webp') 0 0, auto !important;
+}
+/* End www.Cursors-4U.com Code */

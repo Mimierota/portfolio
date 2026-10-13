@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <a href="https://kiunlo.neocities.org/cursors"><img src="https://file.garden/ZezvcgZmvAenbmCc/kiunlos_cursors.png"></a>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Lexend:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <!-- Boucing Pink Bow Tie Ribbon - https://www.cursors-4u.com/cursor/boucing-pink-bow-tie-ribbon -->
+<link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/boucing-pink-bow-tie-ribbon-da645d24-32.css">
+<!-- End www.Cursors-4U.com Code -->
+
+   
+   
+    <title>mon portfolio - lisa beggaz</title>
+</head>
+
+<body>
+    <!-- HEADER FIXE -->
+    <header>
+        <a href="#info" class="logo">mon portfolio</a>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#info">accueil</a></li>
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#projets">stage</a></li>
+                <li><a href="#e5">compétences</a></li>
+                <li><a href="#veille">veille</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION HERO (Plein écran sans <br>) -->
+    <section id="info" class="section hero">
+        <div class="container hero-container">
+            <h1 class="hero-title">welcome to my <span class="italic-accent">Portfolio</span></h1>
+            <div class="hero-image-wrapper">
+              <a href="#projets"> <img src="images/pochette.png" alt="Dossier Portfolio" class="hero-folder-img"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT ME (Layout 2 colonnes : Image + Texte) -->
+    <section id="about" class="section hero-about">
+        <div class="container about-layout">
+            <div class="about-image-side">
+                <img src="images/badge.png" alt="Badge d'identification" class="about-badge-img">
+            </div>
+            <div class="about-text-side">
+                <h2 class="section-title">à propos de <span class="italic-accent">(moi)</span></h2>
+                <div class="about-content">
+                    <p>Etudiante en <strong>BTS SIO option SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux),j'ai choisi ce cursus pour aborder l'informatique par la pratique et comprendre l'envers du décor des infrastructures.</p>
+                    <p>Ce qui me motive au quotidien, c'est la curiosité : décortiquer le fonctionnement d'un système, concevoir, modéliser et bâtir des architectures réseau et système .Passionnée par l'impact environnemental du numérique, j'oriente ma démarche vers le Green IT, l'efficience énergétique et les synergies possibles entre technologie, écologie et création artistique. Mon objectif est d'allier rigueur technique et vision responsable du futur numérique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS / MISSIONS DE STAGE -->
+    <section id="projets" class="section projects">
+        <div class="container">
+            <h2 class="section-title">stage.</h2>
+            
+            <div class="projects-grid">
+                <!-- Carte Mission 1 -->
+                <a href="projets/projet-details1.html" class="project-card-link">
+                    <article class="project-card">
+                        <div class="project-card-image-wrapper">
+                        <img src="images/hepsek.jpg" alt="Aperçu Google Workspace">
+                        <div class="card-info">
+                            <h3>support helpdesk n1 & assistance utilisateurs</h3>
+                            <p class="card-meta">stage BRUT • semaines 1 à 6</p>
+                            <p class="card-desc"><strong>contexte :</strong> prise en charge des requêtes quotidiennes, incidents matériels et demandes d'accès collaborateurs chez BRUT.</p>
+                            <p class="card-desc"><strong>réalisation :</strong> traitement des tickets de niveau 1 (FreshDesk / GLPI), dépannage physique/réseau, création de canaux Slack et assistance de proximité sur l'environnement Mac.</p>
+                        </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Carte Mission 2 -->
+                <a href="projets/projet-details2.html" class="project-card-link">
+                    <article class="project-card">
+                        <div class="project-card-image-wrapper">
+                        <img src="images/google.png" alt="Aperçu VLANs">
+                        <div class="card-info">
+                            <h3>gestion des accès & onboarding / offboarding</h3>
+                            <p class="card-meta">stage BRUT • semaine 3</p>
+                            <p class="card-desc"><strong>contexte :</strong> accompagnement des mouvements d'effectifs (entrées, sorties, pigistes) et sécurisation des accès aux outils internes.</p>
+                            <p class="card-desc"><strong>réalisation :</strong> administration des utilisateurs sur Google Workspace, gestion des groupes/OU, activation de la double authentification (2FA) et réinitialisation des accès.</p>
+                        </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Carte Mission 3 -->
+                <a href="projets/projet-details3.html" class="project-card-link">
+                    <article class="project-card">
+                        <div class="project-card-image-wrapper">
+                        <img src="images/3.1.png" alt="Aperçu Jamf Pro">
+                        <div class="card-info">
+                            <h3>observation de l'administration mdm (jamf) & réseau</h3>
+                            <p class="card-meta">stage BRUT • semaines 4 & 5</p>
+                            <p class="card-desc"><strong>contexte :</strong> étude et découverte des mécanismes de gestion centralisée du parc Mac et de la sécurité réseau en entreprise.</p>
+                            <p class="card-desc"><strong>réalisation :</strong> observation du flux d'enrôlement Mac sur Jamf Pro (Policies/Profiles) et découverte de l'architecture réseau (VLANs, FortiGate 600E, bornes Wi-Fi).</p>
+                        </div>
+                    </div>
+                    </article>
+                </a>
+
+                <!-- Carte Mission 4 -->
+                <a href="projets/projet-details4.html" class="project-card-link">
+                    <article class="project-card">
+                        <div class="project-card-image-wrapper">
+                        <img src="images/4.1.png" alt="Aperçu Mini-Projet">
+                        <div class="card-info">
+                            <h3>mini-projet : guide d'onboarding mac</h3>
+                            <p class="card-meta">stage BRUT • semaines 5 & 6</p>
+                            <p class="card-desc"><strong>contexte :</strong> création d'une documentation centrale pour simplifier la prise en main des Mac par les nouveaux arrivants.</p>
+                            <p class="card-desc"><strong>réalisation :</strong> rédaction d'un guide étape par étape (première connexion, accès Wi-Fi, Self Service Jamf, sécurité) et présentation à l'équipe IT.</p>
+                        </div>
+                    </div>
+                    </article>
+                </a>
+            </div> 
+        </div> 
+    </section>
+
+    <!-- SECTION COMPÉTENCES (Fond Noir avec tags d'outils) -->
+    <section id="e5" class="section bts-sio">
+        <div class="container">
+            <h2 class="section-title dark-title">compétences</h2>
+            <p class="section-subtitle">Retrouvez mon tableau de synthèse et mes fiches de compétences.</p>
+
+            <!-- BLOC 1 -->
+            <div class="bloc-wrapper">
+                <h3 class="bloc-heading">bloc 1 : support et mise à disposition des services informatiques</h3>
+                <div class="accordion-container">
+                    <details class="accordion-item">
+                        <summary>gérer le patrimoine informatique. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• recensement, inventaire et suivi des équipements avec GLPI et jamf pro.</p>
+                            <p>• application des règles d'attribution du matériel aux utilisateurs.</p>
+                            <div class="skill-tags">
+                                <span class="tag">GLPI</span>
+                                <span class="tag">Jamf Pro</span>
+                                <span class="tag">Inventaire</span>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary>répondre aux incidents et aux demandes d'assistance. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• prise en charge, qualification et traitement des tickets via GLPI et freshdesk.</p>
+                            <p>• accompagnement, écoute et communication adaptée avec les utilisateurs.</p>
+                            <div class="skill-tags">
+                                <span class="tag">FreshDesk</span>
+                                <span class="tag">Helpdesk N1/N2</span>
+                                <span class="tag">Ticketing</span>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary>travailler en mode projet. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• planification et réalisation du guide d'onboarding Mac (cadrage, rédaction, recueil des retours).</p>
+                            <div class="skill-tags">
+                                <span class="tag">Documentation</span>
+                                <span class="tag">Gestion de projet</span>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- BLOC 2 -->
+            <div class="bloc-wrapper">
+                <h3 class="bloc-heading">bloc 2 : administration des systèmes et des réseaux (option SISR)</h3>
+                <div class="accordion-container">
+                    <details class="accordion-item">
+                        <summary>concevoir une solution d'infrastructure réseau. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• analyse de trames avec wireshark.</p>
+                            <p>• établissement d'un plan d'adressage IP et segmentation par VLANs (trunking/access).</p>
+                            <div class="skill-tags">
+                                <span class="tag">Wireshark</span>
+                                <span class="tag">VLANs</span>
+                                <span class="tag">Cisco / Meraki</span>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary>administrer des systèmes et des services. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• administration des identités, groupes et licences sous google admin console.</p>
+                            <p>• gestion centralisée d'un parc macOS avec le MDM jamf pro (smart groups, profiles, policies, scripts shell).</p>
+                            <p>• configuration et déploiement des services réseau DHCP et DNS.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Google Admin</span>
+                                <span class="tag">macOS / MDM</span>
+                                <span class="tag">Bash / Shell</span>
+                                <span class="tag">DHCP / DNS</span>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- BLOC 3 -->
+            <div class="bloc-wrapper">
+                <h3 class="bloc-heading">bloc 3 : cybersécurité des services informatiques</h3>
+                <div class="accordion-container">
+                    <details class="accordion-item">
+                        <summary>protéger les données et l'identité des utilisateurs. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• déploiement de la double authentification (2FA / MFA) et politique de mots de passe sur google workspace.</p>
+                            <p>• application du principe du moindre privilège lors de l'attribution des droits d'accès.</p>
+                            <div class="skill-tags">
+                                <span class="tag">MFA / 2FA</span>
+                                <span class="tag">Zero Trust</span>
+                                <span class="tag">Google Workspace</span>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary>sécuriser les équipements et les accès au réseau. <span class="icon">+</span></summary>
+                        <div class="accordion-content">
+                            <p>• configuration de règles de filtrage web et politiques de sécurité sur le pare-feu fortiGate 600E.</p>
+                            <p>• déploiement de la solution EDR jamf protect pour la détection et la réponse aux menaces sur les postes Mac.</p>
+                            <div class="skill-tags">
+                                <span class="tag">FortiGate</span>
+                                <span class="tag">Jamf Protect</span>
+                                <span class="tag">EDR</span>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VEILLE TECHNOLOGIQUE (Layout 2 colonnes : Texte + Image) -->
+    <section id="veille" class="section veille-section">
+        <div class="container">
+            <div class="veille-layout">
+                <!-- Colonne Gauche : Texte -->
+                <div class="veille-text-side">
+                    <span class="veille-badge">VEILLE TECHNOLOGIQUE</span>
+                    <h2 class="veille-main-title">veille<br><span class="italic-accent">technologique</span></h2>
+                    
+                    <p class="veille-intro">
+                        <strong>thématique :</strong> l'impact environnemental de l'IA & les leviers du Green IT dans la gestion des infrastructures réseau et cloud.
+                    </p>
+
+                    <ul class="veille-list">
+                        <li><strong>empreinte carbone & énergie de l'IA:</strong> analyse de la consommation énergétique des datacenters hôtes de modèles génératifs, gestion de l'eau et politiques de décarbonation des géants du Cloud..</li>
+                        <li><strong>optimisation des infrastructures SISR:</strong> leviers techniques d'éco-conception système et réseau (liquid cooling, allongement du cycle de vie des équipements, virtualisation sobre, réutilisation de la chaleur fatale).</li>
+                        <li><strong>synergies biomimétisme, art & IT:</strong> étude des modèles algorithmiques inspirés du vivant pour optimiser les topologies réseau et des pratiques d'éco-création numérique. </li>
+                    </ul>
+
+                    <div class="veille-tools-box">
+                        <p><strong>outils de collecte :</strong> Feedly (RSS), Google Alerts, Green IT.fr, ADEME, Le Big Data, IT-Connect, Le Monde Informatique.</p>
+                    </div>
+                </div>
+
+                <!-- Colonne Droite : Image fiches/bloc-notes -->
+                <div class="veille-graphic-side">
+                    <img src="images/fiche.png" alt="Bloc-notes de veille" class="veille-fiches-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Beggaz Lisa<span>.</span></h3>
+                <p>étudiante en BTS SIO option SISR — réseaux, systèmes & cybersécurité.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:lbeggaz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h4>navigation</h4>
+                <ul>
+                    <li><a href="#info">accueil</a></li>
+                    <li><a href="#about">à propos</a></li>
+                    <li><a href="#projets">stage</a></li>
+                    <li><a href="#e5">compétences</a></li>
+                    <li><a href="#veille">veille</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>contact</h4>
+                <p><i class="fas fa-phone"></i> 07 81 98 67 14</p>
+                <p><i class="fas fa-envelope"></i> lbeggaz@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Paris & Île-de-France</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 lisa beggaz — portfolio BTS SIO SISR</p>
+            <a href="mentions-legales.html" class="legal-link">mentions légales</a>
+        </div>
+    </footer>
+</body>
+</html>
