@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique — Lisa Beggaz</title>
+    <link rel="stylesheet" href="style3.1.css">
+    <link rel="icon" type="image/png" href="images/lotusbye.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #fcfcfc;">
+
+    <!-- HEADER FIXE -->
+    <header>
+        <a href="index.html#info" class="logo">lisa beggaz</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#info">accueil</a></li>
+                <li><a href="index.html#about">à propos</a></li>
+                <li><a href="index.html#projets">stage</a></li>
+                <li><a href="index.html#e5">compétences</a></li>
+                <li><a href="veille.html" class="active">veille ↗</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT VEILLE -->
+    <main class="section project-detail-page container" style="padding-top: 140px;">
+        <a href="index.html#veille" class="btn-back-portfolio">&larr; retour au portfolio</a>
+
+        <span class="veille-badge">VEILLE TECHNOLOGIQUE — BTS SIO SISR</span>
+        <h1 style="font-size: 44px; margin: 15px 0 30px 0;">L’IA générative au service de la <span class="italic-accent">cybersécurité</span> (et de l'attaque)</h1>
+
+        <!-- CADRE METHODOLOGIE -->
+        <div class="brut-presentation-card" style="margin-bottom: 40px;">
+            <div class="brut-accent-line"></div>
+            <div class="brut-card-body">
+                <h3>Méthodologie & Outils de collecte</h3>
+                <p><strong>Moyens mis en œuvre :</strong> Flux RSS centralisés sur Feedly, requêtes programmées sur Google Alerts, suivi hebdomadaire des bulletins d'alerte du CERT-FR et de l'ANSSI, consultation des bases CVE et articles spécialisés (IT-Connect, Le Monde Informatique, ZDNet).</p>
+            </div>
+        </div>
+
+        <h2>1. Présentation du sujet & enjeux</h2>
+        <p>
+            L'émergence des modèles de langage étendus (LLM) et de l'IA générative transforme en profondeur le paysage de la cybersécurité. D'un côté, l'IA offre aux équipes SOC et d'infrastructures des capacités d'analyse de logs automatisées et d'assistance à la réponse aux incidents. De l'autre, elle permet aux cybercriminels d'automatiser la création d'attaques complexes (phishing sur-mesure, malwares polymorphes).
+        </p>
+
+        <h2>2. Fil d'actualités et faits marquants (2025 - 2026)</h2>
+
+        <!-- ARTICLE 1 -->
+        <article class="brut-presentation-card" style="flex-direction: column; gap: 10px; margin-bottom: 25px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 13px; font-weight: 700; color: #bd5f7b;">JANVIER 2025 • ANSSI / CERT-FR</span>
+                <a href="https://www.cert.ssi.gouv.fr" target="_blank" style="font-size: 13px; color: #111;">Source officielle ↗</a>
+            </div>
+            <h3 style="font-size: 18px; margin: 0;">Démocratisation des attaques par Phishing génératif ultra-personnalisé</h3>
+            <p style="font-size: 14px; color: #555;">
+                Publication d'analyses montrant l'utilisation de LLM non censurés (DarkBERT/FraudGPT) pour rédiger des courriels d'hameçonnage sans fautes d'orthographe, imitant le style rédactionnel des dirigeants d'entreprise pour contourner les filtres antispam traditionnels.
+            </p>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="brut-presentation-card" style="flex-direction: column; gap: 10px; margin-bottom: 25px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 13px; font-weight: 700; color: #bd5f7b;">SEPTEMBRE 2025 • MICROSOFT SECURITY</span>
+                <a href="https://www.microsoft.com/security" target="_blank" style="font-size: 13px; color: #111;">Source officielle ↗</a>
+            </div>
+            <h3 style="font-size: 18px; margin: 0;">Intégration d'assistants IA dans les SIEM et EDR d'entreprise (Copilot for Security)</h3>
+            <p style="font-size: 14px; color: #555;">
+                Généralisation des fonctionnalités d'IA au sein des consoles de sécurité (SIEM/EDR). L'IA permet de traduire en quelques secondes une requête complexe d'analyse de trames/logs ou de générer automatiquement des règles YARA pour isoler un poste infecté.
+            </p>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article class="brut-presentation-card" style="flex-direction: column; gap: 10px; margin-bottom: 25px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 13px; font-weight: 700; color: #bd5f7b;">FÉVRIER 2026 • LE MONDE INFORMATIQUE</span>
+                <a href="https://www.lemondeinformatique.fr" target="_blank" style="font-size: 13px; color: #111;">Article de presse ↗</a>
+            </div>
+            <h3 style="font-size: 18px; margin: 0;">Code malveillant polymorphe automatisé par agents autonomes</h3>
+            <p style="font-size: 14px; color: #555;">
+                Mise en garde contre les malwares autonomes capables de modifier légèrement leur propre code source en temps réel via des micro-appels d'API IA afin d'échapper à la signature antivirus classique des EDR.
+            </p>
+        </article>
+
+        <h2>3. Analyse & Impact pour les infrastructures d'entreprise (SISR)</h2>
+        <p>
+            Pour un administrateur réseau et système, l'IA générative modifie la gestion de la sécurité au quotidien :
+        </p>
+        <ul style="padding-left: 20px; line-height: 1.8; color: #444;">
+            <li><strong>Renforcement du Zero Trust :</strong> L'authentification ne peut plus reposer sur la seule confiance visuelle/vocale (deepfakes) ; la vérification stricte par double authentification (2FA / Passkeys) devient obligatoire.</li>
+            <li><strong>Gain de temps en administration :</strong> Automatisation de la rédaction de scripts PowerShell/Bash pour déployer des patchs d'urgence ou auditer des configurations d'accès.</li>
+        </ul>
+    </main>
+
+</body>
+</html>
